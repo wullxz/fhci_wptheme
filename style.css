@@ -1383,7 +1383,6 @@ blockquote:after,
  */
 
 .widget {
-	border-top: 4px solid #1a1a1a;
 	margin-bottom: 3.5em;
 	padding-top: 1.75em;
 }
@@ -1505,17 +1504,19 @@ blockquote:after,
  */
 
 .site {
-	background-color: #fff;
+	background-color: #005b99;
 }
 
 .site-inner {
 	margin: 0 auto;
-	max-width: 1320px;
+	max-width: 1200px;
+	min-width: 70%;
 	position: relative;
 }
 
 .site-content {
 	word-wrap: break-word;
+	background-color: white;
 }
 
 /* Do not show the outline on the skip link target. */
@@ -1537,7 +1538,7 @@ blockquote:after,
  */
 
 .site-header {
-	padding: 2.625em 7.6923%;
+	padding: 2.625em 0px;
 }
 
 .site-header-main {
@@ -1566,7 +1567,7 @@ blockquote:after,
 }
 
 .site-branding .site-title a {
-	color: #1a1a1a;
+	color: white;
 }
 
 .site-branding .site-title a:hover,
@@ -2723,7 +2724,7 @@ p > video {
 	}
 
 	.site-header {
-		padding: 3.9375em 7.6923%;
+		padding: 3.9375em 0px;
 	}
 
 	.site-branding {
@@ -2915,11 +2916,6 @@ p > video {
  */
 
 @media screen and (min-width: 56.875em) {
-	.site-header {
-		padding-right: 4.5455%;
-		padding-left: 4.5455%;
-	}
-
 	.site-header-main {
 		-webkit-align-items: flex-start;
 		-ms-flex-align: start;
@@ -3053,7 +3049,7 @@ p > video {
 	}
 
 	.site-content {
-		padding: 0 4.5455%;
+		padding: 0 5px;
 	}
 
 	.content-area {
@@ -3343,10 +3339,6 @@ p > video {
 @media screen and (min-width: 61.5625em) {
 	.site-main {
 		margin-bottom: 7.0em;
-	}
-
-	.site-header {
-		padding: 5.25em 4.5455%;
 	}
 
 	.site-branding,
@@ -3868,10 +3860,6 @@ p > video {
 
 	.site-inner {
 		max-width: none;
-	}
-
-	.site-header {
-		padding: 0 0 1.75em;
 	}
 
 	.site-branding {
