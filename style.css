@@ -543,6 +543,10 @@ td {
 	padding: 0.4375em;
 }
 
+.bg-fh-green {
+	background-color: #aadd6d;
+}
+
 /* Placeholder text color -- selectors need to be separate to work. */
 ::-webkit-input-placeholder {
 	color: #686868;
@@ -771,7 +775,6 @@ a:active {
 	-webkit-flex: 0 1 100%;
 	-ms-flex: 0 1 100%;
 	flex: 0 1 100%;
-	margin: 0.875em 0;
 }
 
 .site-header-menu.toggled-on,
@@ -880,7 +883,7 @@ a:active {
 	content: "\f432";
 }
 
-.site-header .main-navigation + .social-navigation {
+.site-header-menu .main-navigation + .social-navigation {
 	margin-top: 1.75em;
 }
 
@@ -1538,7 +1541,12 @@ blockquote:after,
  */
 
 .site-header {
-	padding: 2.625em 0px;
+	/*padding: 2.625em 0px;*/
+}
+
+.header-spacer {
+	height: 10px;
+	width: 100%;
 }
 
 .site-header-main {
@@ -1624,7 +1632,6 @@ blockquote:after,
 
 .header-image {
 	clear: both;
-	margin: 0.875em 0;
 }
 
 .header-image a {
@@ -2723,10 +2730,6 @@ p > video {
 		margin-bottom: 5.25em;
 	}
 
-	.site-header {
-		padding: 3.9375em 0px;
-	}
-
 	.site-branding {
 		margin-top: 1.3125em;
 		margin-bottom: 1.3125em;
@@ -2749,16 +2752,8 @@ p > video {
 		padding: 0.8125em 0.875em 0.6875em;
 	}
 
-	.site-header-menu {
-		margin: 1.3125em 0;
-	}
-
-	.site-header .main-navigation + .social-navigation {
+	.site-header-menu .main-navigation + .social-navigation {
 		margin-top: 2.625em;
-	}
-
-	.header-image {
-		margin: 1.3125em 0;
 	}
 
 	.pagination {
@@ -3341,9 +3336,7 @@ p > video {
 		margin-bottom: 7.0em;
 	}
 
-	.site-branding,
-	.site-header-menu,
-	.header-image {
+	.site-branding {
 		margin-top: 1.75em;
 		margin-bottom: 1.75em;
 	}

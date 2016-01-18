@@ -45,17 +45,6 @@
 					<button id="menu-toggle" class="menu-toggle"><?php _e( 'Menu', 'twentysixteen' ); ?></button>
 
 					<div id="site-header-menu" class="site-header-menu">
-						<?php if ( has_nav_menu( 'primary' ) ) : ?>
-							<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'twentysixteen' ); ?>">
-								<?php
-									wp_nav_menu( array(
-										'theme_location' => 'primary',
-										'menu_class'     => 'primary-menu',
-									 ) );
-								?>
-							</nav><!-- .main-navigation -->
-						<?php endif; ?>
-
 						<?php if ( has_nav_menu( 'social' ) ) : ?>
 							<nav id="social-navigation" class="social-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Social Links Menu', 'twentysixteen' ); ?>">
 								<?php
@@ -92,6 +81,19 @@
 					</a>
 				</div><!-- .header-image -->
 			<?php endif; // End header image check. ?>
+		<div id="site-header-menu" class="site-header-menu">
+						<?php if ( has_nav_menu( 'primary' ) ) : ?>
+							<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'twentysixteen' ); ?>">
+								<?php
+									wp_nav_menu( array(
+										'theme_location' => 'primary',
+										'menu_class'     => 'primary-menu',
+									 ) );
+								?>
+							</nav><!-- .main-navigation -->
+						<?php endif; ?>
+		</div>
+		<div id="header-spacer" class="header-spacer bg-fh-green"></div>
 		</header><!-- .site-header -->
 
 		<div id="content" class="site-content">
