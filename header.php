@@ -40,6 +40,9 @@
 						<p class="site-description"><?php echo $description; ?></p>
 					<?php endif; ?>
 				</div><!-- .site-branding -->
+				<div class="fh-header-logo">
+					<img src="<?php bloginfo('template_directory'); ?>/images/logofh_bluebg.png" alt="FH Bingen" class="fh-header-logo" />
+				</div>
 
 				<?php if ( has_nav_menu( 'primary' ) || has_nav_menu( 'social' ) ) : ?>
 					<button id="menu-toggle" class="menu-toggle"><?php _e( 'Menu', 'twentysixteen' ); ?></button>
