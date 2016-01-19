@@ -782,6 +782,21 @@ a:active {
 	display: block;
 }
 
+/* positioning as overlay on header image */
+.site-header-menu {
+	position: absolute;
+	bottom: 0px;
+	z-index: 2;
+	padding: 0px 5px;
+	background: rgba(0,0,0,0.8);
+	color: white;
+	width: 100%;
+}
+
+.site-header-menu a {
+	color: white !important;
+}
+
 .main-navigation {
 	font-family: Montserrat, "Helvetica Neue", sans-serif;
 }
@@ -1632,6 +1647,7 @@ blockquote:after,
 
 .header-image {
 	clear: both;
+	position: relative;
 }
 
 .header-image a {
