@@ -26,8 +26,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
  * 6.0 - Navigation
  *   6.1 - Links
  *   6.2 - Menus
- * 7.0 - Accessibility
- * 8.0 - Alignments
+ * 7.0 - Accessibility * 8.0 - Alignments
  * 9.0 - Clearings
  * 10.0 - Widgets
  * 11.0 - Content
@@ -1395,6 +1394,31 @@ blockquote:after,
 	clear: both;
 }
 
+div.contact p {
+  text-align: center;
+  margin: 10px;
+}
+
+div.contact a {
+  box-shadow: none;
+}
+
+div.normallineheight {
+  line-height: 1;
+}
+
+div.greenbox {
+  background-color: #aadd6d;
+  color: #000000;
+  padding: 20px;
+  margin: 0px 0px 15px 0px;
+  clear: both;
+  text-align: center;
+}
+
+div.greenbox ul li {
+  text-align: left;
+}
 
 /**
  * 10.0 - Widgets
@@ -3921,4 +3945,22 @@ p > video {
 	.widecolumn {
 		padding: 0;
 	}
+
+}
+
+/* MISC */
+div.download, div.download a {
+  background-color: #005b99;
+  color: #ffffff;
+  padding: 20px;
+  width: 66%;
+  margin: 10px 17%;
+  clear: both;
+  text-align: center;
+  box-shadow: none;
+  font-weight: bold;
+}
+
+div.download>a {
+  width: 100%;
 }
